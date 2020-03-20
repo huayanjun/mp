@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/vhr?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    password: password
+    username: root
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    indi.huahua.mp.mapper: debug
+
